@@ -10256,10 +10256,10 @@ public final class Response {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(address_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, address_);
       }
-      if (!getPrivateKeyBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(privateKey_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, privateKey_);
       }
       unknownFields.writeTo(output);
@@ -10271,10 +10271,10 @@ public final class Response {
       if (size != -1) return size;
 
       size = 0;
-      if (!getAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(address_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, address_);
       }
-      if (!getPrivateKeyBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(privateKey_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, privateKey_);
       }
       size += unknownFields.getSerializedSize();
@@ -12770,7 +12770,7 @@ public final class Response {
         if (callValue_ != 0L) {
           output.writeInt64(1, callValue_);
         }
-        if (!getTokenIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(tokenId_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, tokenId_);
         }
         unknownFields.writeTo(output);
@@ -12786,7 +12786,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(1, callValue_);
         }
-        if (!getTokenIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(tokenId_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, tokenId_);
         }
         size += unknownFields.getSerializedSize();
@@ -16975,7 +16975,7 @@ public final class Response {
       if (!resMessage_.isEmpty()) {
         output.writeBytes(10, resMessage_);
       }
-      if (!getAssetIssueIDBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 14, assetIssueID_);
       }
       if (withdrawAmount_ != 0L) {
@@ -17062,7 +17062,7 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(10, resMessage_);
       }
-      if (!getAssetIssueIDBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, assetIssueID_);
       }
       if (withdrawAmount_ != 0L) {
@@ -19624,7 +19624,7 @@ public final class Response {
       if (!pubKey_.isEmpty()) {
         output.writeBytes(3, pubKey_);
       }
-      if (!getUrlBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, url_);
       }
       if (totalProduced_ != 0L) {
@@ -19663,7 +19663,7 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, pubKey_);
       }
-      if (!getUrlBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, url_);
       }
       if (totalProduced_ != 0L) {
@@ -23478,7 +23478,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsAsset(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAsset().getMap().containsKey(key);
     }
     /**
@@ -23513,7 +23513,7 @@ public final class Response {
     public long getAssetOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAsset().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23529,7 +23529,7 @@ public final class Response {
 
     public long getAssetOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAsset().getMap();
       if (!map.containsKey(key)) {
@@ -23575,7 +23575,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsAssetV2(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetV2().getMap().containsKey(key);
     }
     /**
@@ -23610,7 +23610,7 @@ public final class Response {
     public long getAssetV2OrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetV2().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23626,7 +23626,7 @@ public final class Response {
 
     public long getAssetV2OrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetV2().getMap();
       if (!map.containsKey(key)) {
@@ -23957,7 +23957,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsLatestAssetOperationTime(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetLatestAssetOperationTime().getMap().containsKey(key);
     }
     /**
@@ -23984,7 +23984,7 @@ public final class Response {
     public long getLatestAssetOperationTimeOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTime().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23996,7 +23996,7 @@ public final class Response {
 
     public long getLatestAssetOperationTimeOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTime().getMap();
       if (!map.containsKey(key)) {
@@ -24038,7 +24038,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsLatestAssetOperationTimeV2(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetLatestAssetOperationTimeV2().getMap().containsKey(key);
     }
     /**
@@ -24065,7 +24065,7 @@ public final class Response {
     public long getLatestAssetOperationTimeV2OrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTimeV2().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -24077,7 +24077,7 @@ public final class Response {
 
     public long getLatestAssetOperationTimeV2OrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTimeV2().getMap();
       if (!map.containsKey(key)) {
@@ -24130,7 +24130,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsFreeAssetNetUsage(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetFreeAssetNetUsage().getMap().containsKey(key);
     }
     /**
@@ -24157,7 +24157,7 @@ public final class Response {
     public long getFreeAssetNetUsageOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsage().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -24169,7 +24169,7 @@ public final class Response {
 
     public long getFreeAssetNetUsageOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsage().getMap();
       if (!map.containsKey(key)) {
@@ -24211,7 +24211,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsFreeAssetNetUsageV2(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetFreeAssetNetUsageV2().getMap().containsKey(key);
     }
     /**
@@ -24238,7 +24238,7 @@ public final class Response {
     public long getFreeAssetNetUsageV2OrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsageV2().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -24250,7 +24250,7 @@ public final class Response {
 
     public long getFreeAssetNetUsageV2OrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsageV2().getMap();
       if (!map.containsKey(key)) {
@@ -26137,7 +26137,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsAsset(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAsset().getMap().containsKey(key);
       }
       /**
@@ -26172,7 +26172,7 @@ public final class Response {
       public long getAssetOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAsset().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -26188,7 +26188,7 @@ public final class Response {
 
       public long getAssetOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAsset().getMap();
         if (!map.containsKey(key)) {
@@ -26212,7 +26212,7 @@ public final class Response {
 
       public Builder removeAsset(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAsset().getMutableMap()
             .remove(key);
         return this;
@@ -26235,7 +26235,7 @@ public final class Response {
       public Builder putAsset(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAsset().getMutableMap()
             .put(key, value);
@@ -26293,7 +26293,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsAssetV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetV2().getMap().containsKey(key);
       }
       /**
@@ -26328,7 +26328,7 @@ public final class Response {
       public long getAssetV2OrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetV2().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -26344,7 +26344,7 @@ public final class Response {
 
       public long getAssetV2OrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetV2().getMap();
         if (!map.containsKey(key)) {
@@ -26368,7 +26368,7 @@ public final class Response {
 
       public Builder removeAssetV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetV2().getMutableMap()
             .remove(key);
         return this;
@@ -26391,7 +26391,7 @@ public final class Response {
       public Builder putAssetV2(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetV2().getMutableMap()
             .put(key, value);
@@ -27561,7 +27561,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsLatestAssetOperationTime(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetLatestAssetOperationTime().getMap().containsKey(key);
       }
       /**
@@ -27588,7 +27588,7 @@ public final class Response {
       public long getLatestAssetOperationTimeOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTime().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27600,7 +27600,7 @@ public final class Response {
 
       public long getLatestAssetOperationTimeOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTime().getMap();
         if (!map.containsKey(key)) {
@@ -27620,7 +27620,7 @@ public final class Response {
 
       public Builder removeLatestAssetOperationTime(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableLatestAssetOperationTime().getMutableMap()
             .remove(key);
         return this;
@@ -27639,7 +27639,7 @@ public final class Response {
       public Builder putLatestAssetOperationTime(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableLatestAssetOperationTime().getMutableMap()
             .put(key, value);
@@ -27689,7 +27689,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsLatestAssetOperationTimeV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetLatestAssetOperationTimeV2().getMap().containsKey(key);
       }
       /**
@@ -27716,7 +27716,7 @@ public final class Response {
       public long getLatestAssetOperationTimeV2OrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTimeV2().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27728,7 +27728,7 @@ public final class Response {
 
       public long getLatestAssetOperationTimeV2OrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTimeV2().getMap();
         if (!map.containsKey(key)) {
@@ -27748,7 +27748,7 @@ public final class Response {
 
       public Builder removeLatestAssetOperationTimeV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableLatestAssetOperationTimeV2().getMutableMap()
             .remove(key);
         return this;
@@ -27767,7 +27767,7 @@ public final class Response {
       public Builder putLatestAssetOperationTimeV2(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableLatestAssetOperationTimeV2().getMutableMap()
             .put(key, value);
@@ -27848,7 +27848,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsFreeAssetNetUsage(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetFreeAssetNetUsage().getMap().containsKey(key);
       }
       /**
@@ -27875,7 +27875,7 @@ public final class Response {
       public long getFreeAssetNetUsageOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsage().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27887,7 +27887,7 @@ public final class Response {
 
       public long getFreeAssetNetUsageOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsage().getMap();
         if (!map.containsKey(key)) {
@@ -27907,7 +27907,7 @@ public final class Response {
 
       public Builder removeFreeAssetNetUsage(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableFreeAssetNetUsage().getMutableMap()
             .remove(key);
         return this;
@@ -27926,7 +27926,7 @@ public final class Response {
       public Builder putFreeAssetNetUsage(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableFreeAssetNetUsage().getMutableMap()
             .put(key, value);
@@ -27976,7 +27976,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsFreeAssetNetUsageV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetFreeAssetNetUsageV2().getMap().containsKey(key);
       }
       /**
@@ -28003,7 +28003,7 @@ public final class Response {
       public long getFreeAssetNetUsageV2OrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsageV2().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -28015,7 +28015,7 @@ public final class Response {
 
       public long getFreeAssetNetUsageV2OrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsageV2().getMap();
         if (!map.containsKey(key)) {
@@ -28035,7 +28035,7 @@ public final class Response {
 
       public Builder removeFreeAssetNetUsageV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableFreeAssetNetUsageV2().getMutableMap()
             .remove(key);
         return this;
@@ -28054,7 +28054,7 @@ public final class Response {
       public Builder putFreeAssetNetUsageV2(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableFreeAssetNetUsageV2().getMutableMap()
             .put(key, value);
@@ -34613,7 +34613,7 @@ public final class Response {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getKeyBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
         }
         if (value_ != 0L) {
@@ -34628,7 +34628,7 @@ public final class Response {
         if (size != -1) return size;
 
         size = 0;
-        if (!getKeyBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
         }
         if (value_ != 0L) {
@@ -36938,7 +36938,7 @@ public final class Response {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getLastSyncBlockBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lastSyncBlock_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, lastSyncBlock_);
         }
         if (remainNum_ != 0L) {
@@ -36959,19 +36959,19 @@ public final class Response {
         if (needSyncFromUs_ != false) {
           output.writeBool(7, needSyncFromUs_);
         }
-        if (!getHostBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(host_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 8, host_);
         }
         if (port_ != 0) {
           output.writeInt32(9, port_);
         }
-        if (!getNodeIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nodeId_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 10, nodeId_);
         }
         if (connectTime_ != 0L) {
           output.writeInt64(11, connectTime_);
         }
-        if (avgLatency_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(avgLatency_) != 0) {
           output.writeDouble(12, avgLatency_);
         }
         if (syncToFetchSize_ != 0) {
@@ -36989,7 +36989,7 @@ public final class Response {
         if (blockInPorcSize_ != 0) {
           output.writeInt32(17, blockInPorcSize_);
         }
-        if (!getHeadBlockWeBothHaveBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(headBlockWeBothHave_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 18, headBlockWeBothHave_);
         }
         if (isActive_ != false) {
@@ -37007,10 +37007,10 @@ public final class Response {
         if (disconnectTimes_ != 0) {
           output.writeInt32(23, disconnectTimes_);
         }
-        if (!getLocalDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(localDisconnectReason_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 24, localDisconnectReason_);
         }
-        if (!getRemoteDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remoteDisconnectReason_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 25, remoteDisconnectReason_);
         }
         unknownFields.writeTo(output);
@@ -37022,7 +37022,7 @@ public final class Response {
         if (size != -1) return size;
 
         size = 0;
-        if (!getLastSyncBlockBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lastSyncBlock_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, lastSyncBlock_);
         }
         if (remainNum_ != 0L) {
@@ -37049,21 +37049,21 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeBoolSize(7, needSyncFromUs_);
         }
-        if (!getHostBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(host_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, host_);
         }
         if (port_ != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(9, port_);
         }
-        if (!getNodeIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nodeId_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, nodeId_);
         }
         if (connectTime_ != 0L) {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(11, connectTime_);
         }
-        if (avgLatency_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(avgLatency_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(12, avgLatency_);
         }
@@ -37087,7 +37087,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(17, blockInPorcSize_);
         }
-        if (!getHeadBlockWeBothHaveBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(headBlockWeBothHave_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(18, headBlockWeBothHave_);
         }
         if (isActive_ != false) {
@@ -37110,10 +37110,10 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(23, disconnectTimes_);
         }
-        if (!getLocalDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(localDisconnectReason_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(24, localDisconnectReason_);
         }
-        if (!getRemoteDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remoteDisconnectReason_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(25, remoteDisconnectReason_);
         }
         size += unknownFields.getSerializedSize();
@@ -39327,10 +39327,10 @@ public final class Response {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getCodeVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(codeVersion_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, codeVersion_);
         }
-        if (!getP2PVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(p2PVersion_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, p2PVersion_);
         }
         if (listenPort_ != 0) {
@@ -39372,10 +39372,10 @@ public final class Response {
         if (supportConstant_ != false) {
           output.writeBool(15, supportConstant_);
         }
-        if (minTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(minTimeRatio_) != 0) {
           output.writeDouble(16, minTimeRatio_);
         }
-        if (maxTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(maxTimeRatio_) != 0) {
           output.writeDouble(17, maxTimeRatio_);
         }
         if (allowCreationOfContracts_ != 0L) {
@@ -39393,10 +39393,10 @@ public final class Response {
         if (size != -1) return size;
 
         size = 0;
-        if (!getCodeVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(codeVersion_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, codeVersion_);
         }
-        if (!getP2PVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(p2PVersion_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, p2PVersion_);
         }
         if (listenPort_ != 0) {
@@ -39451,11 +39451,11 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeBoolSize(15, supportConstant_);
         }
-        if (minTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(minTimeRatio_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(16, minTimeRatio_);
         }
-        if (maxTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(maxTimeRatio_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(17, maxTimeRatio_);
         }
@@ -41193,7 +41193,7 @@ public final class Response {
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
                             throws java.io.IOException {
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
           }
           if (initSize_ != 0L) {
@@ -41205,7 +41205,7 @@ public final class Response {
           if (maxSize_ != 0L) {
             output.writeInt64(4, maxSize_);
           }
-          if (useRate_ != 0D) {
+          if (java.lang.Double.doubleToRawLongBits(useRate_) != 0) {
             output.writeDouble(5, useRate_);
           }
           unknownFields.writeTo(output);
@@ -41217,7 +41217,7 @@ public final class Response {
           if (size != -1) return size;
 
           size = 0;
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
           }
           if (initSize_ != 0L) {
@@ -41232,7 +41232,7 @@ public final class Response {
             size += com.google.protobuf.CodedOutputStream
               .computeInt64Size(4, maxSize_);
           }
-          if (useRate_ != 0D) {
+          if (java.lang.Double.doubleToRawLongBits(useRate_) != 0) {
             size += com.google.protobuf.CodedOutputStream
               .computeDoubleSize(5, useRate_);
           }
@@ -42230,16 +42230,16 @@ public final class Response {
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
                             throws java.io.IOException {
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
           }
-          if (!getLockNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockName_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 2, lockName_);
           }
-          if (!getLockOwnerBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockOwner_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 3, lockOwner_);
           }
-          if (!getStateBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(state_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 4, state_);
           }
           if (blockTime_ != 0L) {
@@ -42248,7 +42248,7 @@ public final class Response {
           if (waitTime_ != 0L) {
             output.writeInt64(6, waitTime_);
           }
-          if (!getStackTraceBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stackTrace_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 7, stackTrace_);
           }
           unknownFields.writeTo(output);
@@ -42260,16 +42260,16 @@ public final class Response {
           if (size != -1) return size;
 
           size = 0;
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
           }
-          if (!getLockNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockName_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, lockName_);
           }
-          if (!getLockOwnerBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockOwner_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, lockOwner_);
           }
-          if (!getStateBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(state_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, state_);
           }
           if (blockTime_ != 0L) {
@@ -42280,7 +42280,7 @@ public final class Response {
             size += com.google.protobuf.CodedOutputStream
               .computeInt64Size(6, waitTime_);
           }
-          if (!getStackTraceBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stackTrace_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, stackTrace_);
           }
           size += unknownFields.getSerializedSize();
@@ -43400,13 +43400,13 @@ public final class Response {
         if (freeMemory_ != 0L) {
           output.writeInt64(5, freeMemory_);
         }
-        if (cpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(cpuRate_) != 0) {
           output.writeDouble(6, cpuRate_);
         }
-        if (!getJavaVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(javaVersion_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 7, javaVersion_);
         }
-        if (!getOsNameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(osName_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 8, osName_);
         }
         if (jvmTotalMemoery_ != 0L) {
@@ -43415,7 +43415,7 @@ public final class Response {
         if (jvmFreeMemory_ != 0L) {
           output.writeInt64(10, jvmFreeMemory_);
         }
-        if (processCpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(processCpuRate_) != 0) {
           output.writeDouble(11, processCpuRate_);
         }
         for (int i = 0; i < memoryDescInfoList_.size(); i++) {
@@ -43453,14 +43453,14 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(5, freeMemory_);
         }
-        if (cpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(cpuRate_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(6, cpuRate_);
         }
-        if (!getJavaVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(javaVersion_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, javaVersion_);
         }
-        if (!getOsNameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(osName_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, osName_);
         }
         if (jvmTotalMemoery_ != 0L) {
@@ -43471,7 +43471,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(10, jvmFreeMemory_);
         }
-        if (processCpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(processCpuRate_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(11, processCpuRate_);
         }
@@ -45186,7 +45186,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsCheatWitnessInfoMap(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetCheatWitnessInfoMap().getMap().containsKey(key);
     }
     /**
@@ -45213,7 +45213,7 @@ public final class Response {
     public java.lang.String getCheatWitnessInfoMapOrDefault(
         java.lang.String key,
         java.lang.String defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.String> map =
           internalGetCheatWitnessInfoMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -45225,7 +45225,7 @@ public final class Response {
 
     public java.lang.String getCheatWitnessInfoMapOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.String> map =
           internalGetCheatWitnessInfoMap().getMap();
       if (!map.containsKey(key)) {
@@ -45251,10 +45251,10 @@ public final class Response {
       if (beginSyncNum_ != 0L) {
         output.writeInt64(1, beginSyncNum_);
       }
-      if (!getBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(block_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, block_);
       }
-      if (!getSolidityBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(solidityBlock_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, solidityBlock_);
       }
       if (currentConnectCount_ != 0) {
@@ -45297,10 +45297,10 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, beginSyncNum_);
       }
-      if (!getBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(block_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, block_);
       }
-      if (!getSolidityBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(solidityBlock_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, solidityBlock_);
       }
       if (currentConnectCount_ != 0) {
@@ -46636,7 +46636,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsCheatWitnessInfoMap(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetCheatWitnessInfoMap().getMap().containsKey(key);
       }
       /**
@@ -46663,7 +46663,7 @@ public final class Response {
       public java.lang.String getCheatWitnessInfoMapOrDefault(
           java.lang.String key,
           java.lang.String defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.String> map =
             internalGetCheatWitnessInfoMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -46675,7 +46675,7 @@ public final class Response {
 
       public java.lang.String getCheatWitnessInfoMapOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.String> map =
             internalGetCheatWitnessInfoMap().getMap();
         if (!map.containsKey(key)) {
@@ -46695,7 +46695,7 @@ public final class Response {
 
       public Builder removeCheatWitnessInfoMap(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableCheatWitnessInfoMap().getMutableMap()
             .remove(key);
         return this;
@@ -46714,8 +46714,11 @@ public final class Response {
       public Builder putCheatWitnessInfoMap(
           java.lang.String key,
           java.lang.String value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        if (value == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
+        if (value == null) {
+  throw new NullPointerException("map value");
+}
+
         internalGetMutableCheatWitnessInfoMap().getMutableMap()
             .put(key, value);
         return this;
@@ -52876,7 +52879,7 @@ public final class Response {
         if (index_ != 0) {
           output.writeInt32(5, index_);
         }
-        if (!getToAmountBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 6, toAmount_);
         }
         if (!transparentToAddress_.isEmpty()) {
@@ -52911,7 +52914,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(5, index_);
         }
-        if (!getToAmountBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, toAmount_);
         }
         if (!transparentToAddress_.isEmpty()) {
@@ -55638,7 +55641,7 @@ public final class Response {
         if (code_ != org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code.SUCCESS.getNumber()) {
           output.writeEnum(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
         }
         unknownFields.writeTo(output);
@@ -55654,7 +55657,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
         }
         size += unknownFields.getSerializedSize();
@@ -57515,7 +57518,7 @@ public final class Response {
         if (code_ != org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code.ENOUGH_PERMISSION.getNumber()) {
           output.writeEnum(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
         }
         unknownFields.writeTo(output);
@@ -57531,7 +57534,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
         }
         size += unknownFields.getSerializedSize();
@@ -61406,7 +61409,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsAssetNetUsed(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetUsed().getMap().containsKey(key);
     }
     /**
@@ -61433,7 +61436,7 @@ public final class Response {
     public long getAssetNetUsedOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -61445,7 +61448,7 @@ public final class Response {
 
     public long getAssetNetUsedOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       if (!map.containsKey(key)) {
@@ -61487,7 +61490,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsAssetNetLimit(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetLimit().getMap().containsKey(key);
     }
     /**
@@ -61514,7 +61517,7 @@ public final class Response {
     public long getAssetNetLimitOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -61526,7 +61529,7 @@ public final class Response {
 
     public long getAssetNetLimitOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       if (!map.containsKey(key)) {
@@ -62193,7 +62196,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetUsed().getMap().containsKey(key);
       }
       /**
@@ -62220,7 +62223,7 @@ public final class Response {
       public long getAssetNetUsedOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -62232,7 +62235,7 @@ public final class Response {
 
       public long getAssetNetUsedOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         if (!map.containsKey(key)) {
@@ -62252,7 +62255,7 @@ public final class Response {
 
       public Builder removeAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetUsed().getMutableMap()
             .remove(key);
         return this;
@@ -62271,7 +62274,7 @@ public final class Response {
       public Builder putAssetNetUsed(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetUsed().getMutableMap()
             .put(key, value);
@@ -62321,7 +62324,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetLimit().getMap().containsKey(key);
       }
       /**
@@ -62348,7 +62351,7 @@ public final class Response {
       public long getAssetNetLimitOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -62360,7 +62363,7 @@ public final class Response {
 
       public long getAssetNetLimitOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         if (!map.containsKey(key)) {
@@ -62380,7 +62383,7 @@ public final class Response {
 
       public Builder removeAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetLimit().getMutableMap()
             .remove(key);
         return this;
@@ -62399,7 +62402,7 @@ public final class Response {
       public Builder putAssetNetLimit(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetLimit().getMutableMap()
             .put(key, value);
@@ -62929,7 +62932,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsAssetNetUsed(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetUsed().getMap().containsKey(key);
     }
     /**
@@ -62956,7 +62959,7 @@ public final class Response {
     public long getAssetNetUsedOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -62968,7 +62971,7 @@ public final class Response {
 
     public long getAssetNetUsedOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       if (!map.containsKey(key)) {
@@ -63010,7 +63013,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsAssetNetLimit(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetLimit().getMap().containsKey(key);
     }
     /**
@@ -63037,7 +63040,7 @@ public final class Response {
     public long getAssetNetLimitOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -63049,7 +63052,7 @@ public final class Response {
 
     public long getAssetNetLimitOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       if (!map.containsKey(key)) {
@@ -63886,7 +63889,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetUsed().getMap().containsKey(key);
       }
       /**
@@ -63913,7 +63916,7 @@ public final class Response {
       public long getAssetNetUsedOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -63925,7 +63928,7 @@ public final class Response {
 
       public long getAssetNetUsedOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         if (!map.containsKey(key)) {
@@ -63945,7 +63948,7 @@ public final class Response {
 
       public Builder removeAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetUsed().getMutableMap()
             .remove(key);
         return this;
@@ -63964,7 +63967,7 @@ public final class Response {
       public Builder putAssetNetUsed(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetUsed().getMutableMap()
             .put(key, value);
@@ -64014,7 +64017,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetLimit().getMap().containsKey(key);
       }
       /**
@@ -64041,7 +64044,7 @@ public final class Response {
       public long getAssetNetLimitOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -64053,7 +64056,7 @@ public final class Response {
 
       public long getAssetNetLimitOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         if (!map.containsKey(key)) {
@@ -64073,7 +64076,7 @@ public final class Response {
 
       public Builder removeAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetLimit().getMutableMap()
             .remove(key);
         return this;
@@ -64092,7 +64095,7 @@ public final class Response {
       public Builder putAssetNetLimit(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetLimit().getMutableMap()
             .put(key, value);

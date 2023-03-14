@@ -2342,7 +2342,7 @@ public final class Chain {
         if (contractRet_ != org.tron.trident.proto.Chain.Transaction.Result.contractResult.DEFAULT.getNumber()) {
           output.writeEnum(3, contractRet_);
         }
-        if (!getAssetIssueIDBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 14, assetIssueID_);
         }
         if (withdrawAmount_ != 0L) {
@@ -2387,7 +2387,7 @@ public final class Chain {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(3, contractRet_);
         }
-        if (!getAssetIssueIDBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, assetIssueID_);
         }
         if (withdrawAmount_ != 0L) {

@@ -4396,7 +4396,7 @@ public final class GrpcAPI {
       if (!toAddress_.isEmpty()) {
         output.writeBytes(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, assetId_);
       }
       if (amount_ != 0L) {
@@ -4419,7 +4419,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, assetId_);
       }
       if (amount_ != 0L) {
@@ -5820,7 +5820,7 @@ public final class GrpcAPI {
       if (!toAddress_.isEmpty()) {
         output.writeBytes(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, assetId_);
       }
       if (amount_ != 0L) {
@@ -5843,7 +5843,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, assetId_);
       }
       if (amount_ != 0L) {
@@ -7341,7 +7341,7 @@ public final class GrpcAPI {
       if (!pkD_.isEmpty()) {
         output.writeBytes(9, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 10, paymentAddress_);
       }
       unknownFields.writeTo(output);
@@ -7389,7 +7389,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(9, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, paymentAddress_);
       }
       size += unknownFields.getSerializedSize();
@@ -8424,7 +8424,7 @@ public final class GrpcAPI {
       if (!pkD_.isEmpty()) {
         output.writeBytes(2, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, paymentAddress_);
       }
       unknownFields.writeTo(output);
@@ -8444,7 +8444,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, paymentAddress_);
       }
       size += unknownFields.getSerializedSize();
@@ -13513,7 +13513,7 @@ public final class GrpcAPI {
       if (!ovk_.isEmpty()) {
         output.writeBytes(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -13525,7 +13525,7 @@ public final class GrpcAPI {
       if (!transparentToAddress_.isEmpty()) {
         output.writeBytes(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -13552,7 +13552,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -13567,7 +13567,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -15348,7 +15348,7 @@ public final class GrpcAPI {
       if (!ovk_.isEmpty()) {
         output.writeBytes(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -15360,7 +15360,7 @@ public final class GrpcAPI {
       if (!transparentToAddress_.isEmpty()) {
         output.writeBytes(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -15387,7 +15387,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -15402,7 +15402,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -18961,10 +18961,10 @@ public final class GrpcAPI {
       if (!messageHash_.isEmpty()) {
         output.writeBytes(4, messageHash_);
       }
-      if (!getTriggerContractInputBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(triggerContractInput_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, triggerContractInput_);
       }
-      if (!getParameterTypeBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(parameterType_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, parameterType_);
       }
       unknownFields.writeTo(output);
@@ -18992,10 +18992,10 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(4, messageHash_);
       }
-      if (!getTriggerContractInputBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(triggerContractInput_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, triggerContractInput_);
       }
-      if (!getParameterTypeBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(parameterType_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, parameterType_);
       }
       size += unknownFields.getSerializedSize();
@@ -23383,7 +23383,7 @@ public final class GrpcAPI {
       for (int i = 0; i < spendAuthoritySignature_.size(); i++) {
         output.writeMessage(2, spendAuthoritySignature_.get(i));
       }
-      if (!getAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, amount_);
       }
       if (!transparentToAddress_.isEmpty()) {
@@ -23406,7 +23406,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, spendAuthoritySignature_.get(i));
       }
-      if (!getAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, amount_);
       }
       if (!transparentToAddress_.isEmpty()) {
@@ -24308,7 +24308,7 @@ public final class GrpcAPI {
   }
   /**
    * <pre>
-   *stake 2.0
+   * Stake 2.0
    * </pre>
    *
    * Protobuf type {@code protocol.CanWithdrawUnfreezeAmountRequestMessage}
@@ -24589,7 +24589,7 @@ public final class GrpcAPI {
     }
     /**
      * <pre>
-     *stake 2.0
+     * Stake 2.0
      * </pre>
      *
      * Protobuf type {@code protocol.CanWithdrawUnfreezeAmountRequestMessage}

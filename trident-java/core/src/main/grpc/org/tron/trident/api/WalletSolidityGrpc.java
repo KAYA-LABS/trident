@@ -1,19 +1,6 @@
 package org.tron.trident.api;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
-import static io.grpc.stub.ClientCalls.blockingUnaryCall;
-import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
  * <pre>
@@ -21,8 +8,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.31.0)",
+    value = "by gRPC proto compiler (version 1.49.2)",
     comments = "Source: api/api.proto")
+@io.grpc.stub.annotations.GrpcGenerated
 public final class WalletSolidityGrpc {
 
   private WalletSolidityGrpc() {}
@@ -209,14 +197,14 @@ public final class WalletSolidityGrpc {
      */
     public void getAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Account> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void getNowBlock2(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNowBlock2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNowBlock2Method(), responseObserver);
     }
 
     /**
@@ -226,42 +214,42 @@ public final class WalletSolidityGrpc {
      */
     public void getTransactionById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getRewardInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetRewardInfoMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetRewardInfoMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getGetAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.AccountAddressMessage,
                 org.tron.trident.proto.Response.Account>(
                   this, METHODID_GET_ACCOUNT)))
           .addMethod(
             getGetNowBlock2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.BlockExtention>(
                   this, METHODID_GET_NOW_BLOCK2)))
           .addMethod(
             getGetTransactionByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_GET_TRANSACTION_BY_ID)))
           .addMethod(
             getGetRewardInfoMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.NumberMessage>(
@@ -291,7 +279,7 @@ public final class WalletSolidityGrpc {
      */
     public void getAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Account> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -299,7 +287,7 @@ public final class WalletSolidityGrpc {
      */
     public void getNowBlock2(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNowBlock2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -310,7 +298,7 @@ public final class WalletSolidityGrpc {
      */
     public void getTransactionById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -318,7 +306,7 @@ public final class WalletSolidityGrpc {
      */
     public void getRewardInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetRewardInfoMethod(), getCallOptions()), request, responseObserver);
     }
   }
@@ -343,14 +331,14 @@ public final class WalletSolidityGrpc {
     /**
      */
     public org.tron.trident.proto.Response.Account getAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockExtention getNowBlock2(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNowBlock2Method(), getCallOptions(), request);
     }
 
@@ -360,14 +348,14 @@ public final class WalletSolidityGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Chain.Transaction getTransactionById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.NumberMessage getRewardInfo(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetRewardInfoMethod(), getCallOptions(), request);
     }
   }
@@ -393,7 +381,7 @@ public final class WalletSolidityGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.Account> getAccount(
         org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAccountMethod(), getCallOptions()), request);
     }
 
@@ -401,7 +389,7 @@ public final class WalletSolidityGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockExtention> getNowBlock2(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNowBlock2Method(), getCallOptions()), request);
     }
 
@@ -412,7 +400,7 @@ public final class WalletSolidityGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> getTransactionById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionByIdMethod(), getCallOptions()), request);
     }
 
@@ -420,7 +408,7 @@ public final class WalletSolidityGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.NumberMessage> getRewardInfo(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetRewardInfoMethod(), getCallOptions()), request);
     }
   }

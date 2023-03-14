@@ -4573,7 +4573,7 @@ public final class Contract {
       if (publicLatestFreeNetTime_ != 0L) {
         output.writeInt64(25, publicLatestFreeNetTime_);
       }
-      if (!getIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 41, id_);
       }
       unknownFields.writeTo(output);
@@ -4657,7 +4657,7 @@ public final class Contract {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(25, publicLatestFreeNetTime_);
       }
-      if (!getIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(41, id_);
       }
       size += unknownFields.getSerializedSize();

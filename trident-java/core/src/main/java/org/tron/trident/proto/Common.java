@@ -2558,7 +2558,7 @@ public final class Common {
       if (id_ != 0) {
         output.writeInt32(2, id_);
       }
-      if (!getPermissionNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(permissionName_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, permissionName_);
       }
       if (threshold_ != 0L) {
@@ -2590,7 +2590,7 @@ public final class Common {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, id_);
       }
-      if (!getPermissionNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(permissionName_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, permissionName_);
       }
       if (threshold_ != 0L) {
@@ -4659,10 +4659,10 @@ public final class Common {
             if (indexed_ != false) {
               output.writeBool(1, indexed_);
             }
-            if (!getNameBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
               com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
             }
-            if (!getTypeBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
               com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
             }
             unknownFields.writeTo(output);
@@ -4678,10 +4678,10 @@ public final class Common {
               size += com.google.protobuf.CodedOutputStream
                 .computeBoolSize(1, indexed_);
             }
-            if (!getNameBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
               size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
             }
-            if (!getTypeBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
               size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
             }
             size += unknownFields.getSerializedSize();
@@ -5443,7 +5443,7 @@ public final class Common {
           if (constant_ != false) {
             output.writeBool(2, constant_);
           }
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 3, name_);
           }
           for (int i = 0; i < inputs_.size(); i++) {
@@ -5478,7 +5478,7 @@ public final class Common {
             size += com.google.protobuf.CodedOutputStream
               .computeBoolSize(2, constant_);
           }
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, name_);
           }
           for (int i = 0; i < inputs_.size(); i++) {
@@ -7590,7 +7590,7 @@ public final class Common {
       if (consumeUserResourcePercent_ != 0L) {
         output.writeInt64(6, consumeUserResourcePercent_);
       }
-      if (!getNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, name_);
       }
       if (originEnergyLimit_ != 0L) {
@@ -7635,7 +7635,7 @@ public final class Common {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(6, consumeUserResourcePercent_);
       }
-      if (!getNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, name_);
       }
       if (originEnergyLimit_ != 0L) {
@@ -9333,7 +9333,7 @@ public final class Common {
       if (value_ != 0L) {
         output.writeInt64(1, value_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, paymentAddress_);
       }
       if (!rcm_.isEmpty()) {
@@ -9355,7 +9355,7 @@ public final class Common {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, value_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, paymentAddress_);
       }
       if (!rcm_.isEmpty()) {
